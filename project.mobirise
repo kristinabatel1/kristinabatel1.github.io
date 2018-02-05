@@ -581,6 +581,9 @@
             },
             ".mbr-text, .mbr-section-btn": {
               "color": "#232323"
+            },
+            "B": {
+              "color": "#3c5bed"
             }
           },
           "_name": "header5",
@@ -723,7 +726,7 @@
               "color": "#232323"
             },
             "B": {
-              "color": "#4f4943"
+              "color": "#3c5bed"
             }
           },
           "_name": "header5",
