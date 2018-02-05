@@ -3,7 +3,7 @@
     "name": "Бизнес с компанией Батэль-clone",
     "currentPage": "index.html",
     "versionFirst": "4.0.14",
-    "uniqCompNum": 35,
+    "uniqCompNum": 36,
     "versionPublish": "4.6.3",
     "theme": {
       "name": "mobirise4",
@@ -571,39 +571,28 @@
         },
         {
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".line": {
-              "background-color": "@lineColor",
-              "color": "@lineColor",
-              "align": "center",
-              "height": "2px",
-              "margin": "0 auto"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
             },
-            ".section-text": {
-              "padding": "2rem 0"
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(45deg, @bg-value, @color2)"
             },
-            ".inner-container": {
-              "margin": "0 auto"
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
-            "@media (max-width: 768px)": {
-              ".inner-container": {
-                "width": "100% !important"
-              }
-            },
-            ".section-text B": {
-              "color": "#3c5bed"
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
             }
           },
-          "_name": "content9",
-          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#e2adff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\" mbr-text><b>ПОЧЕМУ ИМЕННО БАТЭЛЬ?\n</b><div>\n</div><div>Компания предлагает своим партнерам выгодные условия. «Актуально. Выгодно. Престижно» – это три слова, которые отражают суть маркетинг-плана компании Батэль. Сбалансированная система вознаграждений, высокие скидки, выгодные условия, а также готовая система «Бизнес под ключ» – вот те составляющие, которые выгодно отличают компанию Батэль от других сетевых МЛМ-компаний.\n</div><div>\n</div><div><b>Перспективная и молодая\n</b></div><div>Многие люди о компании Batel еще не слышали даже в крупных городах. У нас огромная целевая аудитория. К нам легко идут люди, как минимум просят показать каталог, интересуются возможностями. В такой обстановке работать одно удовольствие!\n</div><div>\n</div><div><b>Доступный маркетинг-план\n</b></div><div>1. ЛТО 1800 рублей,а не 6000-7000 (В любой сетевой компании для начисления дохода нужно выполнять личный объем продаж). Подумайте, какая сумма в месяц у вас уходит на покупку стирального порошка, кондиционера, средства д/уборки дома, ср-ва д/мытья посуды, шампуня, геля для душа, зубной пасты и тд.?\n</div><div>2. Бесплатная регистрация.\n</div><div>3. Очень лояльные условия для выплат.\n</div><div>\n</div><div><b>Промоушены и  «Гранд-премии»\n</b></div><div>Программы для консультантов и Премии Лидерам за стабильный рост структуры и развитие в своем первом уровне Лидерских команд!\n</div><div>\n</div><div><b>Клуб путешественников Батэль\n</b></div><div>Дважды в год каждый консультант компании может победить в программе путешествия. Все просто! Станьте участником клуба путешественников, ежемесячно увеличивайте свой структурный объем и отправляйтесь в увлекательное путешествие вместе с компанией!\n</div><div>\n</div><div><b>Промоушен «Моя мечта – автомобиль»\n</b></div><div>Машина не в кредит а в подарок от компании в награду за ваше внимание и труд!\n</div><div>\n</div><div><b>Эксклюзивная программа «Бизнес под ключ»\n</b></div><div>Открыть свой фирменный салон или офис с востребованным товаром - самый популярный вариант открытия своего бизнеса, который актуален во все времена. Тем более, что это бизнес без рисков.</div></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
-          "_cid": "qI5USps7Ns",
-          "_anchor": "content9-m",
+          "_name": "header5",
+          "_customHTML": "<section class=\"header5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/03.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#e2adff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" name=\"color2\" title=\"Color2\" value=\"#e2adff\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>ПОЧЕМУ ИМЕННО БАТЭЛЬ?</b></h1>\n                <p class=\"mbr-text align-center display-5 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Компания предлагает своим партнерам выгодные условия. «Актуально. Выгодно. Престижно» – это три слова, которые отражают суть маркетинг-плана компании Батэль. Сбалансированная система вознаграждений, высокие скидки, выгодные условия, а также готовая система «Бизнес под ключ» – вот те составляющие, которые выгодно отличают компанию Батэль от других сетевых МЛМ-компаний.\n<br><br><b>Перспективная и молодая\n</b><br>Многие люди о компании Batel еще не слышали даже в крупных городах. У нас огромная целевая аудитория. К нам легко идут люди, как минимум просят показать каталог, интересуются возможностями. В такой обстановке работать одно удовольствие!\n<br><br><b>Доступный маркетинг-план\n</b><br>1. ЛТО 1800 рублей,а не 6000-7000 (В любой сетевой компании для начисления дохода нужно выполнять личный объем продаж). Подумайте, какая сумма в месяц у вас уходит на покупку стирального порошка, кондиционера, средства д/уборки дома, ср-ва д/мытья посуды, шампуня, геля для душа, зубной пасты и тд.?\n<br>2. Бесплатная регистрация.\n<br>3. Очень лояльные условия для выплат.\n<br><br><b>Промоушены и «Гранд-премии»\n</b><br>Программы для консультантов и Премии Лидерам за стабильный рост структуры и развитие в своем первом уровне Лидерских команд!\n<br><br><b>Клуб путешественников Батэль\n</b><br>Дважды в год каждый консультант компании может победить в программе путешествия. Все просто! Станьте участником клуба путешественников, ежемесячно увеличивайте свой структурный объем и отправляйтесь в увлекательное путешествие вместе с компанией!\n<br><br><b>Промоушен «Моя мечта – автомобиль»\n</b><br>Машина не в кредит а в подарок от компании в награду за ваше внимание и труд!\n<br><br><b>Эксклюзивная программа «Бизнес под ключ»\n</b><br>Открыть свой фирменный салон или офис с востребованным товаром - самый популярный вариант открытия своего бизнеса, который актуален во все времена. Тем более, что это бизнес без рисков.</p>\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                        <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qIMkRQLMhm",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header5-z"
         },
         {
           "_styles": {

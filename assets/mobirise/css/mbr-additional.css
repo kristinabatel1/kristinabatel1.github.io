@@ -1812,31 +1812,14 @@ body {
   padding-bottom: 120px;
   background-image: url("../../../assets/images/67-1894x245.png");
 }
-.cid-qI5USps7Ns {
+.cid-qIMkRQLMhm {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #e2adff;
+  background: linear-gradient(45deg, #e2adff, #e2adff);
 }
-.cid-qI5USps7Ns .line {
-  background-color: #232323;
+.cid-qIMkRQLMhm .mbr-text,
+.cid-qIMkRQLMhm .mbr-section-btn {
   color: #232323;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
-.cid-qI5USps7Ns .section-text {
-  padding: 2rem 0;
-}
-.cid-qI5USps7Ns .inner-container {
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .cid-qI5USps7Ns .inner-container {
-    width: 100% !important;
-  }
-}
-.cid-qI5USps7Ns .section-text B {
-  color: #3c5bed;
 }
 .cid-qI5YZ4ZyCU {
   padding-top: 120px;
