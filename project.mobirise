@@ -682,35 +682,6 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "H2": {
-              "color": "#3c5bed"
-            },
-            ".mbr-section-subtitle B": {
-              "color": "#3c5bed"
-            },
-            ".mbr-section-subtitle DIV": {
-              "color": "#232323"
-            }
-          },
-          "_name": "content5",
-          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffe8c0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\">ДЛЯ КОГО СОЗДАН ПРОЕКТ?</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\"><b>Студенты и учащиеся\n</b><div>смогут обеспечивать себя финансами на протяжении всего обучения, позволяя себе больше, чем их сокурсники, а также помогать родителям и получить реальный опыт работы.\n</div><div>\n</div><div><b>Мамы в декрете, беременные женщины и домохозяйки\n</b></div><div>смогут пополнять семейный бюджет, не затрачивая времени на дорогу, и регулировать график работы без ущерба для семьи и личных дел.\n</div><div>\n</div><div><b>Пенсионеры и люди в возрасте\n</b></div><div>смогут заменить обременительную работу с 8 утра до 6 вечера на простую и с приятным общением, получив прибавку к пенсии и возможность узнать много нового.\n</div><div>\n</div><div><b>Работающие по найму: учителя, врачи, офисные работники...\n</b></div><div>смогут получить дополнительный и перспективный источник заработка не требующий много времени, и не отвлекаясь от основной работы.\n</div><div>\n</div><div><b>Временно неработающие, но целеустремленные\n</b></div><div>смогут развиваться личностно и полноценно работать, получив основной источник дохода с огромными перспективами карьерного роста и заработной платы.\n</div><div>\n</div><div><b>Начинающие предприниматели и любители Интернета\n</b></div><div>смогут работать на себя и построить свой онлайн бизнес вместе с дружной командой, имея только желание работать и не имея денег и опыта.\n</div><div>\n</div><div><b>А еще...\n</b></div><div>Отлично подходит для тех, у кого есть кредиты или долги, кто не хочет больше мириться с этим, а хочет все поменять, но не знает, в каком направлении двигаться к обеспеченному будущему.</div></h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline>\n                    Shape your future web project with sharp design and refine coded functions\n                </p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qI627y8Mid",
-          "_anchor": "content5-r",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
             ".line": {
               "background-color": "@lineColor",
