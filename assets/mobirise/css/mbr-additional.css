@@ -1761,51 +1761,71 @@ body {
 .cid-qHOXBREriM .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
-.cid-qHOXBWU11D {
+.cid-qIMnnJR1tv {
   background-image: url("../../../assets/images/photodune-8105926-office-table-with-notepad-computer-and-coffee-cup-m-1698x1177.jpg");
 }
-.cid-qHOXBWU11D .mbr-text,
-.cid-qHOXBWU11D .mbr-section-btn {
-  text-align: center;
-  color: #8adefb;
+.cid-qIMnnJR1tv .mbr-media span {
+  font-size: 48px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s;
+  color: #353535;
 }
-.cid-qHOXBWU11D .mbr-text,
-.cid-qHOXBWU11D .mbr-section-btn B {
+.cid-qIMnnJR1tv .mbr-media span.mbri-play:before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-35%);
+  -moz-transform: translateX(-35%);
+  -ms-transform: translateX(-35%);
+  -o-transform: translateX(-35%);
+  transform: translateX(-35%);
+}
+.cid-qIMnnJR1tv .modalWindow {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.cid-qIMnnJR1tv .modalWindow .modalWindow-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cid-qIMnnJR1tv .modalWindow .modalWindow-video {
+  height: calc(44.9943757vw);
+  width: 80vw;
+  margin: 0 auto;
+}
+.cid-qIMnnJR1tv a.close {
+  position: absolute;
+  right: 4vw;
+  top: 4vh;
+  color: #ffffff;
+  z-index: 5000000;
+  font-size: 37px;
+  background: #000;
+  padding: 20px;
+  border-radius: 50%;
+}
+.cid-qIMnnJR1tv a.close:hover {
+  color: #ffffff;
+}
+.cid-qIMnnJR1tv H1 {
   color: #3c5bed;
 }
-.cid-qHOXBWU11D H1 {
+.cid-qIMnnJR1tv P {
   color: #3c5bed;
 }
-.cid-qI5LIHYDKk {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: linear-gradient(45deg, #ffefd2, #ffeac5);
-}
-@media (min-width: 992px) {
-  .cid-qI5LIHYDKk .mbr-figure {
-    padding-left: 4rem;
-  }
-}
-@media (max-width: 991px) {
-  .cid-qI5LIHYDKk .mbr-figure {
-    padding-top: 3rem;
-  }
-}
-.cid-qI5LIHYDKk .mbr-section-title {
-  text-align: center;
-  color: #84f4f6;
-}
-.cid-qI5LIHYDKk .mbr-text,
-.cid-qI5LIHYDKk .mbr-section-btn {
-  text-align: center;
-  color: #84f4f6;
-}
-.cid-qI5LIHYDKk .mbr-text,
-.cid-qI5LIHYDKk .mbr-section-btn B {
-  color: #232323;
-}
-.cid-qI5LIHYDKk .mbr-section-title B {
-  color: #232323;
+.cid-qIMnnJR1tv .icon-description {
+  color: #3c5bed;
 }
 .cid-qI5Zw5TnQc {
   padding-top: 120px;
